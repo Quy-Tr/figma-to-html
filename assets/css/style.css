@@ -40,6 +40,19 @@ a {
   opacity: 0.9;
   cursor: pointer;
 }
+.line-clamp{
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp,1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line-clamp.line-2{
+  --line-clamp:2;
+}
+.break-all{
+  word-break:break-all;
+}
+/* ================== Header =================== */
 .header {
   background: #fffcf4;
 }
@@ -74,7 +87,7 @@ a {
 .nav li.active a,
 .nav a:hover {
   color: #171100;
-  /* font-weight: 600; */
+  font-weight: 600;
   text-shadow: 1px 0 0 currentColor;
 }
 .nav li.active a::before {
@@ -280,6 +293,7 @@ header .btn-sign-up {
   gap: 30px;
 }
 .popular .course-item {
+  flex: 1;
   border-radius: 12px;
   border: 1px solid #e2dfda;
   background: #fff;
