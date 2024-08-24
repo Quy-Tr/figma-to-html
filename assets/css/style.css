@@ -361,8 +361,14 @@ header .btn-sign-up {
   padding: 96px 0;
   background: #2e2100;
 }
-.feedback-item {
+.feedback-list{
+  overflow: hidden;
   display: flex;
+}
+.feedback-item {
+  width: 100%;
+  display: flex;
+  flex-shrink: 0;
 }
 .feedback-item .avatar {
   width: 72px;
